@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Búsqueda de Estudiantes</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <h2 class="logo">📘 Búsqueda de Estudiantes</h2>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Inicio.html">🏠Inicio</a></li>
+        <li><a class="active" href="Estudiantes.html">👩‍🎓Estudiantes</a></li>
+        <li><a href="Profesores.html">👨‍🏫Profesores</a></li>
+        <li><a href="Contactos.html">📞Contactos</a></li>
+        <li><a href="Inicio sesión.html">🔐Inicio sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="contenido">
+
+    <h1 class="titulo-principal">Consulta del Estudiante</h1>
+    <p class="subtitulo">Busca un estudiante y revisa sus calificaciones registradas.</p>
+
+    <!-- 🔵 BUSCADOR -->
+    <div class="buscador">
+      <input type="text" placeholder="🔍 Buscar por nombre o ID..." class="input-busqueda">
+      <button class="btn-buscar"><i class="fa-solid fa-search"></i> Buscar</button>
+    </div>
+
+    <!-- 🔵 TABLA DE RESULTADOS -->
+    <div class="tabla-contenedor">
+      <table class="tabla">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre del Estudiante</th>
+            <th>Semestre</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Juan Pérez</td>
+            <td>1°</td>
+            <td><button class="btn-ver">Ver Calificaciones</button></td>
+          </tr>
+
+          <tr>
+            <td>002</td>
+            <td>María Gómez</td>
+            <td>1°</td>
+            <td><button class="btn-ver">Ver Calificaciones</button></td>
+          </tr>
+
+          <tr>
+            <td>003</td>
+            <td>Carlos López</td>
+            <td>1°</td>
+            <td><button class="btn-ver">Ver Calificaciones</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+   <!-- 🔵 TABLA DE CALIFICACIONES UNIVERSITARIAS -->
+<h2 class="subtitulo" style="margin-top:50px;">Historial Académico del Estudiante</h2>
+
+<div class="tabla-contenedor">
+  <table class="tabla">
+    <thead>
+      <tr>
+        <th>Asignatura</th>
+        <th>Créditos</th>
+        <th>Periodo 1</th>
+        <th>Periodo 2</th>
+        <th>Periodo 3</th>
+        <th>Periodo 4</th>
+        <th>Definitiva</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Introducción a la Ingeniería</td>
+        <td>3</td>
+        <td>4.0</td>
+        <td>3.8</td>
+        <td>4.2</td>
+        <td>4.0</td>
+        <td><strong>4.0</strong></td>
+        <td>Aprobado</td>
+      </tr>
+
+      <tr>
+        <td>Lógica y Algoritmos</td>
+        <td>4</td>
+        <td>4.5</td>
+        <td>4.0</td>
+        <td>4.6</td>
+        <td>4.8</td>
+        <td><strong>4.5</strong></td>
+        <td>Aprobado</td>
+      </tr>
+
+      <tr>
+        <td>Base de Datos I</td>
+        <td>3</td>
+        <td>3.5</td>
+        <td>3.8</td>
+        <td>4.0</td>
+        <td>4.1</td>
+        <td><strong>3.9</strong></td>
+        <td>Aprobado</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+            
+<footer style="background:#111; color:#fff; text-align:center; padding:20px 550px; margin-top:50px;">
+  <div style="margin-bottom:10px; display:flex; justify-content:center; align-items:center; gap:15px;">
+    <a href="https://facebook.com" target="_blank"
+       style="color:#fff; font-size:1.7rem; transition:transform 0.3s, color 0.3s;">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank"
+       style="color:#fff; font-size:1.7rem; transition:transform 0.3s, color 0.3s;">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank"
+       style="color:#fff; font-size:1.7rem; transition:transform 0.3s, color 0.3s;">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    <a href="https://wa.me/573137190821" target="_blank"
+       style="color:#fff; font-size:1.7rem; transition:transform 0.3s, color 0.3s;">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <p style="margin:5px 0; font-size:0.95rem;">
+    &copy; 2025 <strong>notas_asistencias</strong> • Todos los derechos reservados.
+  </p>
+</footer>
+  
+</body>
+</html>
+

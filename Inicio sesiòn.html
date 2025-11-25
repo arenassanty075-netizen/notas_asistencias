@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asistencia y Notas</title>
+
+  <!-- Estilos y recursos -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" type="image/png">
+
+  <!-- Font Awesome (para iconos) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+
+  <!-- ======= CABECERA ======= -->
+  <header>
+    <h1 class="logo">Registrarse</h1>
+    <nav>
+      <ul>
+        <li><a href="Inicio.html">🏠 Inicio</a></li>
+        <li><a href="Estudiantes.html">👩‍🎓 Estudiantes</a></li>
+        <li><a href="Profesores.html">👨‍🏫 Profesores</a></li>
+        <li><a href="Contactos.html">📞 Contactos</a></li>
+        <li><a href="inicio-sesion.html">🔐 Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ======= SECCIÓN DE REGISTRO ======= -->
+  <main>
+    <section class="registro">
+      <div class="form-container">
+        <h2>Registro de Usuario</h2>
+
+        <form action="registro.php" method="POST">
+          
+          <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+          
+
+          
+          <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" required>
+
+          <input type="password" id="password" name="password" placeholder="Cree una contraseña" required>
+
+          
+          <select id="rol" name="rol" required>
+            <option value="">Seleccione un rol</option>
+            <option value="administrador">Administrador</option>
+            <option value="usuario">Estudiante</option>
+          </select>
+
+          <button type="submit">Registrarse</button>
+
+          <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<footer style="background:#111; color:#fff; text-align:center; padding:20px 560px; margin-top:240px;">
+  <div style="margin-bottom:10px; display:flex; justify-content:center; align-items:center; gap:15px;">
+    <a href="https://facebook.com" target="_blank"
+       style="color:#fff; font-size:1.7rem; transition:transform 0.3s, color 0.3s;">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank"
+       style="color:#fff; font-size:1.7rem; transition:transform 0.3s, color 0.3s;">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank"
+       style="color:#fff; font-size:1.7rem; transition:transform 0.3s, color 0.3s;">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    <a href="https://wa.me/573137190821" target="_blank"
+       style="color:#fff; font-size:1.7rem; transition:transform 0.3s, color 0.3s;">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <p style="margin:5px 0; font-size:0.95rem;">
+    &copy; 2025 <strong>notas_asistencias</strong> • Todos los derechos reservados.
+  </p>
+</footer>
+</body>
+
+</html>
